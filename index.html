@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You 💌</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div id="bg-photo" aria-hidden="true"></div>
+  <div id="hearts"></div>
+
+  <main class="card" aria-live="polite">
+    <h1 id="title">A little note for you</h1>
+
+    <div class="message" id="message">
+      <p id="typed"></p>
+      <div class="actions">
+        <button id="revealBtn">Open my message</button>
+        <button id="playBtn">Play music ♫</button>
+      </div>
+    </div>
+
+    <div class="reveal hidden" id="reveal">
+      <h2>Hey ❤</h2>
+      <p id="finalText">You make my days brighter. Will you be mine?</p>
+      <div class="buttons">
+        <a class="btn" id="yesBtn" href="#">Yes!</a>
+        <a class="btn secondary" id="noBtn" href="#">Maybe later</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Optional audio: put your audio file at assets/music.mp3 or update the src -->
+  <audio id="bg-music" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
